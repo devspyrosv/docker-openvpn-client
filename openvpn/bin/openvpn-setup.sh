@@ -1,4 +1,6 @@
 #!/bin/sh
+/bin/systemctl enable systemd-resolved.service
+/bin/systemctl start systemd-resolved.service
 
 vpn_provider="$(echo $OPENVPN_PROVIDER | tr '[A-Z]' '[a-z]')"
 vpn_provider_configs="/etc/openvpn/conf/$vpn_provider"
