@@ -8,7 +8,7 @@
 # https://github.com/phusion/baseimage-docker/blob/master/Changelog.md
 # for a list of version numbers.
 
-FROM phusion/baseimage:latest
+FROM phusion/baseimage:master
 MAINTAINER Diego Schmidt <dceschmidt@gmail.com>
 
 # Evironment variables
@@ -22,10 +22,10 @@ CMD ["/sbin/my_init"]
 
 # Update packages and install software
 RUN apt-get update \
-    && apt-get install -y openvpn inetutils-traceroute inetutils-ping wget curl \
-    && curl -L https://github.com/jwilder/dockerize/releases/download/v0.2.0/dockerize-linux-amd64-v0.2.0.tar.gz | tar -C /usr/local/bin -xzv \
-    && rm -rfv dockerize-linux-amd64-v0.2.0.tar.gz \
-    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+    && apt-get install -y openvpn openvpn-systemd-resolved inetutils-traceroute inetutils-ping wget curl \
+    && curl -L https://github.com/jwilder/dockerize/releases/download/v0.6.1/dockerize-linux-amd64-v0.6.1.tar.gz | tar -C /usr/local/bin -xzv \
+    && rm -rfv dockerize-linux-amd64-v0.6.1.tar.gz \
+    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 
 # Enabling SSH
