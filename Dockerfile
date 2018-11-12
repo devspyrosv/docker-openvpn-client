@@ -25,7 +25,7 @@ RUN apt-get update \
     && apt-get install -y openvpn openvpn-systemd-resolved inetutils-traceroute inetutils-ping wget curl \
     && curl -L https://github.com/jwilder/dockerize/releases/download/v0.6.1/dockerize-linux-amd64-v0.6.1.tar.gz | tar -C /usr/local/bin -xzv \
     && rm -rfv dockerize-linux-amd64-v0.6.1.tar.gz \
-    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 
 # Enabling SSH
