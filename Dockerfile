@@ -1,15 +1,16 @@
 # OpenVPN Client
 #
-# based on https://github.com/haugene/docker-transmission-openvpn
+# based on https://github.com/schmas/docker-openvpn-client
+# which was based on https://github.com/haugene/docker-transmission-openvpn
 #
-# Version 0.0.1
+# Version 0.0.2
 #
 # See
 # https://github.com/phusion/baseimage-docker/blob/master/Changelog.md
 # for a list of version numbers.
 
 FROM phusion/baseimage:master
-MAINTAINER Diego Schmidt <dceschmidt@gmail.com>
+MAINTAINER devspyrosv <devspyrosv@users.noreply.github.com>
 
 # Evironment variables
 ENV DEBIAN_FRONTEND=noninteractive \

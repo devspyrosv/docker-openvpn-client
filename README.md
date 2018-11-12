@@ -1,9 +1,10 @@
 # Docker OpenVPN Client
-Build based on 
+Build based on
+* [schmas/docker-openvpn-client](https://github.com/schmas/docker-openvpn-client)
 * [phusion/baseimage-docker](https://github.com/phusion/baseimage-docker)
 * [haugene/docker-transmission-openvpn](https://github.com/haugene/docker-transmission-openvpn), even most of this README.
 
-Docker container which runs OpenVPN client. Can be used as base image. Ex.: [Squid Proxy using OpenVPN](https://github.com/schmas/docker-openvpn-proxy) 
+Docker container which runs OpenVPN (>= 2.4.4) client. Can be used as base image. Ex.: [Squid Proxy using OpenVPN](https://github.com/schmas/docker-openvpn-proxy)
 It bundles certificates and configurations for the following VPN providers:
 * Anonine
 * BTGuard
@@ -17,7 +18,7 @@ It bundles certificates and configurations for the following VPN providers:
 * Ivacy
 * IVPN
 * NordVPN
-* Private Internet Access
+* Private Internet Access (update 2018)
 * PrivateVPN
 * PureVPN
 * TigerVPN
