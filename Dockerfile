@@ -10,7 +10,7 @@
 # for a list of version numbers.
 
 FROM phusion/baseimage:master
-MAINTAINER devspyrosv <devspyrosv@users.noreply.github.com>
+MAINTAINER devspyrosv <spyros.vlachos@outlook.com>
 
 # Evironment variables
 ENV DEBIAN_FRONTEND=noninteractive \
